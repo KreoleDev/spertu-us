@@ -11,49 +11,49 @@ const services: Service[] = [
   {
     index: "01",
     id: "mobile",
-    eyebrow: "Desenvolvimento Mobile",
-    title: "Apps nativos que as pessoas amam usar",
-    desc: "Aplicativos nativos e multiplataforma para iOS e Android, rápidos, fluidos e confiáveis.",
+    eyebrow: "Mobile Development",
+    title: "Native apps people love to use",
+    desc: "Fast, fluid, and reliable native and cross-platform applications for iOS and Android.",
     image: "/sections/mobile.png",
   },
   {
     index: "02",
     id: "web",
-    eyebrow: "Desenvolvimento Web",
-    title: "Experiências web modernas e velozes",
-    desc: "Sites e aplicações web acessíveis, escaláveis e de alta performance, do front-end ao back-end.",
+    eyebrow: "Web Development",
+    title: "Modern web experiences built for speed",
+    desc: "Accessible, scalable, high-performance websites and web apps from front end to back end.",
     image: "/sections/web.png",
   },
   {
     index: "03",
     id: "cloud",
-    eyebrow: "Serviços de Nuvem",
-    title: "Infraestrutura pronta para escalar",
-    desc: "Arquitetura cloud-native segura, otimizada para custo e preparada para crescer com você.",
+    eyebrow: "Cloud Services",
+    title: "Infrastructure ready to scale",
+    desc: "Secure cloud-native architecture, optimized for cost and ready to grow with you.",
     image: "/sections/cloud.png",
   },
   {
     index: "04",
-    id: "software-sob-medida",
-    eyebrow: "Software Sob Medida",
-    title: "Soluções construídas para o seu negócio",
-    desc: "Sistemas personalizados desenhados exatamente em torno dos seus processos e objetivos.",
+    id: "custom-software",
+    eyebrow: "Custom Software",
+    title: "Solutions built around your business",
+    desc: "Tailored systems designed around your processes, goals, and the way your team works.",
     image: "/sections/custom.png",
   },
   {
     index: "05",
-    id: "dados-apis",
-    eyebrow: "Dados & APIs",
-    title: "Integrações que conectam tudo",
-    desc: "Pipelines de dados robustos e APIs bem documentadas que unem todos os seus sistemas.",
+    id: "data-apis",
+    eyebrow: "Data & APIs",
+    title: "Integrations that connect everything",
+    desc: "Reliable data pipelines and well-documented APIs that bring all of your systems together.",
     image: "/sections/data.png",
   },
   {
     index: "06",
-    id: "manutencao-suporte",
-    eyebrow: "Manutenção & Suporte",
-    title: "Cuidamos do produto depois do lançamento",
-    desc: "Monitoramento contínuo, atualizações e suporte dedicado para manter tudo funcionando.",
+    id: "maintenance-support",
+    eyebrow: "Maintenance & Support",
+    title: "We take care of the product after launch",
+    desc: "Continuous monitoring, updates, and dedicated support to keep everything running smoothly.",
     image: "/sections/support.png",
   },
 ]
@@ -61,7 +61,7 @@ const services: Service[] = [
 function ServiceCard({ service }: { service: Service }) {
   return (
     <article
-      id={`servico-${service.id}`}
+      id={`service-${service.id}`}
       className="group relative min-h-[29rem] overflow-hidden rounded-[1.5rem] bg-card shadow-2xl shadow-black/25 ring-1 ring-white/10 sm:min-h-[34rem] sm:rounded-[2rem] md:min-h-[40rem]"
     >
       <div className="absolute inset-0">
@@ -96,8 +96,8 @@ function ServiceCard({ service }: { service: Service }) {
 export function Services() {
   return (
     <section
-      id="servicos"
-      aria-label="Serviços"
+      id="services"
+      aria-label="Services"
       className="bg-background px-4 py-12 sm:px-6 sm:py-14 md:py-20"
     >
       <div className="mx-auto max-w-7xl">

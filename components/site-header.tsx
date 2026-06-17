@@ -18,15 +18,15 @@ export function SiteHeader() {
           onClick={handleLogoClick}
           className="flex min-w-0 items-center gap-1 text-base font-bold tracking-tight text-foreground sm:text-lg"
         >
-          KreoleTech
+          SPERTU
           <sup className="text-[0.55rem] text-muted-foreground">TM</sup>
         </Link>
 
         <Link
-          href="#contato"
+          href="#contact"
           className="shrink-0 rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:px-5 sm:text-sm"
         >
-          Entre em contato
+          Get in touch
         </Link>
       </div>
     </header>

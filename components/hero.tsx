@@ -1,7 +1,7 @@
 const stats = [
-  { title: "Ponta a Ponta", desc: "Entrega de produto" },
-  { title: "Cloud-Native", desc: "Arquitetura em primeiro lugar" },
-  { title: "Multiplataforma", desc: "Mobile & web" },
+  { title: "End-to-End", desc: "Product delivery" },
+  { title: "Cloud-Native", desc: "Architecture first" },
+  { title: "Cross-Platform", desc: "Mobile & web" },
 ]
 
 export function Hero() {

@@ -1,47 +1,40 @@
 import { ScrollReset } from '@/components/scroll-reset'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kreoletech.cv'),
-  title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
+  metadataBase: new URL('https://spertu.com'),
+  title: 'Spertu — End-to-end software development',
   description:
-    'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
+    'One partner for every layer of your product — strategy, design, engineering, and the cloud it runs on.',
   icons: {
     icon: [{ url: '/icon.svg?v=2', type: 'image/svg+xml' }],
     shortcut: '/icon.svg?v=2',
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
+    title: 'Spertu — End-to-end software development',
     description:
-      'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
-    url: 'https://kreoletech.cv',
-    siteName: 'KreoleTech',
+      'One partner for every layer of your product — strategy, design, engineering, and the cloud it runs on.',
+    url: 'https://spertu.com',
+    siteName: 'Spertu',
     images: [
       {
-        url: 'https://kreoletech.cv/kreoletech-og-v2.png',
-        width: 1200,
-        height: 630,
-        alt: 'KreoleTech',
+        url: 'https://spertu.com/spertu-logo.png',
+        width: 2172,
+        height: 724,
+        alt: 'Spertu',
       },
     ],
-    locale: 'pt_BR',
+    locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KreoleTech — Desenvolvimento de software de ponta a ponta',
+    title: 'Spertu — End-to-end software development',
     description:
-      'Um único parceiro para cada camada do seu produto — estratégia, design, engenharia e a nuvem onde ele roda.',
-    images: ['https://kreoletech.cv/kreoletech-og-v2.png'],
+      'One partner for every layer of your product — strategy, design, engineering, and the cloud it runs on.',
+    images: ['https://spertu.com/spertu-logo.png'],
   },
 }
 
@@ -60,8 +53,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} bg-background`}
+      lang="en"
+      className="bg-background"
     >
       <body className="font-sans antialiased">
         <ScrollReset />

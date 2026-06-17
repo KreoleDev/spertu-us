@@ -5,9 +5,9 @@ import { useState } from "react"
 
 export function About() {
   return (
-    <section id="sobre" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 md:py-28">
+    <section id="about" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20 md:py-28">
       <h2 className="max-w-3xl text-balance text-2xl font-bold leading-tight text-foreground sm:text-3xl md:text-4xl">
-        Uma empresa de software construída sobre ofício e clareza.
+        A software company built on craft, clarity, and dependable delivery.
       </h2>
     </section>
   )
@@ -18,16 +18,16 @@ export function Contact() {
 
   const processSteps = [
     {
-      title: "Você envia o projeto",
-      desc: "Compartilhe o contexto, o objetivo e a melhor forma de contato.",
+      title: "You send the project",
+      desc: "Share the context, the goal, and the best way to reach you.",
     },
     {
-      title: "Nós entramos em contato",
-      desc: "Respondemos para alinhar escopo, prioridade e próximos passos.",
+      title: "We get in touch",
+      desc: "We respond to align scope, priorities, and next steps.",
     },
     {
-      title: "Planejamos a entrega",
-      desc: "Transformamos a ideia em um plano claro de produto, design e engenharia.",
+      title: "We plan the delivery",
+      desc: "We turn the idea into a clear product, design, and engineering plan.",
     },
   ]
 
@@ -38,15 +38,15 @@ export function Contact() {
   }
 
   return (
-    <section id="contato" className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 md:pb-24">
+    <section id="contact" className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 md:pb-24">
       <div className="rounded-[1.5rem] border border-border bg-card px-4 py-10 sm:rounded-3xl sm:px-6 sm:py-12 md:px-10 md:py-16">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance text-3xl font-bold leading-tight text-card-foreground sm:text-4xl md:text-5xl">
-            Vamos construir algo incrível.
+            Let&apos;s build something great.
           </h2>
           <p className="mx-auto mt-4 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Conte-nos sobre o seu projeto e nós ajudaremos a planejar, projetar
-            e entregar.
+            Tell us about your project and we&apos;ll help you scope, design, and
+            deliver it.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function Contact() {
                   htmlFor="contact-phone"
                   className="mb-2 block text-sm font-medium text-card-foreground"
                 >
-                  Telefone
+                  Phone
                 </label>
                 <input
                   id="contact-phone"
@@ -88,7 +88,7 @@ export function Contact() {
                 htmlFor="project-description"
                 className="mb-2 block text-sm font-medium text-card-foreground"
               >
-                Descrição do projeto
+                Project description
               </label>
               <textarea
                 id="project-description"
@@ -102,24 +102,24 @@ export function Contact() {
               type="submit"
               className="inline-flex h-12 w-full items-center justify-center rounded-full bg-primary px-6 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 sm:w-fit"
             >
-              Enviar projeto
+              Send project
             </button>
             {isSubmitted && (
               <p
                 role="status"
                 className="text-sm font-medium text-primary"
               >
-                Projeto enviado
+                Project sent
               </p>
             )}
           </form>
 
           <div className="border-t border-border pt-9 lg:border-l lg:border-t-0 lg:pl-14 lg:pt-0">
             <p className="text-sm font-medium uppercase tracking-widest text-primary">
-              Processo
+              Process
             </p>
             <h3 className="mt-4 max-w-sm text-balance text-2xl font-bold leading-tight text-card-foreground sm:text-3xl">
-              Do primeiro contato ao plano de ação.
+              From first contact to an action plan.
             </h3>
 
             <div className="mt-7 grid gap-6 sm:mt-8 sm:gap-7">
